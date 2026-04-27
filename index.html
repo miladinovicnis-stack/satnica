@@ -3,94 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Satnica takmičenja</title>
+<title>Satnica</title>
 
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0b1220;
-        color: #e5e7eb;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        background: #f6f7fb;
+        color: #111827;
     }
 
     .wrap {
-        max-width: 900px;
-        margin: 50px auto;
-        padding: 20px;
+        max-width: 520px;
+        margin: auto;
+        padding: 18px;
     }
 
     /* HEADER */
-    .header {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
     .school {
         font-size: 12px;
-        letter-spacing: 3px;
-        color: #38bdf8;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
+        color: #2563eb;
+        font-weight: 600;
+        margin-top: 10px;
     }
 
     h1 {
-        margin: 10px 0;
-        font-size: 28px;
+        font-size: 22px;
+        margin: 8px 0 6px;
+        line-height: 1.2;
     }
 
     .meta {
         font-size: 14px;
-        color: #94a3b8;
+        color: #6b7280;
+        margin-bottom: 6px;
     }
 
-    /* VEĆI PREDMETI */
-    .subjects {
-        font-size: 18px;
-        font-weight: 600;
-        color: #cbd5e1;
-        margin-top: 10px;
+    .desc {
+        font-size: 14px;
+        color: #374151;
+        margin-bottom: 18px;
         line-height: 1.4;
     }
 
-    /* TIMELINE */
-    .timeline {
-        position: relative;
-        margin-top: 40px;
-        padding-left: 30px;
-        border-left: 2px solid rgba(56,189,248,0.3);
-    }
-
-    .event {
-        position: relative;
-        margin-bottom: 30px;
-        padding-left: 20px;
-    }
-
-    .dot {
-        position: absolute;
-        left: -9px;
-        top: 5px;
-        width: 14px;
-        height: 14px;
-        background: #38bdf8;
-        border-radius: 50%;
-        box-shadow: 0 0 12px rgba(56,189,248,0.8);
+    /* CARD LIST */
+    .card {
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .time {
-        font-size: 13px;
-        color: #38bdf8;
-        font-weight: bold;
-        margin-bottom: 5px;
+        font-weight: 700;
+        color: #2563eb;
+        font-size: 14px;
+        min-width: 110px;
     }
 
-    .title {
-        font-size: 16px;
-        color: #e5e7eb;
+    .event {
+        text-align: right;
+        font-size: 14px;
+        color: #111827;
     }
 
-    .event:hover .title {
-        color: #38bdf8;
-        transition: 0.2s;
+    /* SMALL FOOTER */
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #9ca3af;
+        margin-top: 18px;
     }
 </style>
 </head>
@@ -99,46 +87,39 @@
 
 <div class="wrap">
 
-    <div class="header">
-        <div class="school">ЕТШ "Мија Станимировић"</div>
+    <div class="school">ЕТШ "Мија Станимировић"</div>
 
-        <h1>Сатница такмичења</h1>
+    <h1>Сатница такмичења</h1>
 
-        <div class="meta">Ниш • 8.5.2026</div>
+    <div class="meta">📍 Ниш • 🗓 8.5.2026</div>
 
-        <div class="subjects">
-            Основе електронике 1 и 2<br>
-            Електроника<br>
-            Енергетска електроника
-        </div>
+    <div class="desc">
+        Основе електронике 1 и 2<br>
+        Електроника • Енергетска електроника
     </div>
 
-    <div class="timeline">
+    <div class="card">
+        <div class="time">08:00 – 08:15</div>
+        <div class="event">Пријава такмичара</div>
+    </div>
 
-        <div class="event">
-            <div class="dot"></div>
-            <div class="time">08:00 – 08:15</div>
-            <div class="title">Улазак и распоређивање учесника</div>
-        </div>
+    <div class="card">
+        <div class="time">09:00 – 12:00</div>
+        <div class="event">Израда задатака</div>
+    </div>
 
-        <div class="event">
-            <div class="dot"></div>
-            <div class="time">09:00 – 12:00</div>
-            <div class="title">Рад на задацима (писмени део)</div>
-        </div>
+    <div class="card">
+        <div class="time">13:00</div>
+        <div class="event">Прелиминарни резултати</div>
+    </div>
 
-        <div class="event">
-            <div class="dot"></div>
-            <div class="time">13:00</div>
-            <div class="title">Објављивање привремених резултата</div>
-        </div>
+    <div class="card">
+        <div class="time">14:00</div>
+        <div class="event">Коначни резултати</div>
+    </div>
 
-        <div class="event">
-            <div class="dot"></div>
-            <div class="time">14:00</div>
-            <div class="title">Коначан пласман и резултати</div>
-        </div>
-
+    <div class="footer">
+        Ažurira se u realnom vremenu
     </div>
 
 </div>
