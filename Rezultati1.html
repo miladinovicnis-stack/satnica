@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezultati takmičenja</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        background: #0b1220;
+        color: #e5e7eb;
+    }
+
+    .wrap {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 18px;
+    }
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .school {
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #38bdf8;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        margin: 10px 0 5px;
+        font-size: 26px;
+    }
+
+    .meta {
+        font-size: 14px;
+        color: #94a3b8;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #38bdf8;
+        font-weight: 600;
+    }
+
+    /* TABLE CARD */
+    .card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(56,189,248,0.2);
+        border-radius: 14px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background: rgba(56,189,248,0.08);
+        color: #93c5fd;
+        font-weight: 600;
+    }
+
+    tr {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    tr:hover {
+        background: rgba(56,189,248,0.05);
+    }
+
+    .rank {
+        color: #38bdf8;
+        font-weight: bold;
+        width: 50px;
+    }
+
+    .points {
+        text-align: right;
+        font-weight: bold;
+        color: #fbbf24;
+    }
+
+    /* MOBILE FIX */
+    @media (max-width: 600px) {
+        th, td {
+            padding: 10px;
+            font-size: 13px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <div class="header">
+        <div class="school">ЕТШ "Мија Станимировић"</div>
+        <h1>Rezultati takmičenja</h1>
+        <div class="meta">Niš • 8.5.2026</div>
+    </div>
+
+    <!-- OE1 -->
+    <div class="section-title">Osnove elektrotehnike 1</div>
+    <div class="card">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Učenik</th>
+                <th class="points">Bodovi</th>
+            </tr>
+            <tr>
+                <td class="rank">1</td>
+                <td>Ime Prezime</td>
+                <td class="points">95</td>
+            </tr>
+            <tr>
+                <td class="rank">2</td>
+                <td>Ime Prezime</td>
+                <td class="points">88</td>
+            </tr>
+            <tr>
+                <td class="rank">3</td>
+                <td>Ime Prezime</td>
+                <td class="points">81</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- OE2 -->
+    <div class="section-title">Osnove elektrotehnike 2</div>
+    <div class="card">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Učenik</th>
+                <th class="points">Bodovi</th>
+            </tr>
+            <tr>
+                <td class="rank">1</td>
+                <td>Ime Prezime</td>
+                <td class="points">92</td>
+            </tr>
+            <tr>
+                <td class="rank">2</td>
+                <td>Ime Prezime</td>
+                <td class="points">86</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ELEKTRONIKA -->
+    <div class="section-title">Elektronika</div>
+    <div class="card">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Učenik</th>
+                <th class="points">Bodovi</th>
+            </tr>
+            <tr>
+                <td class="rank">1</td>
+                <td>Ime Prezime</td>
+                <td class="points">97</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ENERGETSKA -->
+    <div class="section-title">Energetska elektronika</div>
+    <div class="card">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Učenik</th>
+                <th class="points">Bodovi</th>
+            </tr>
+            <tr>
+                <td class="rank">1</td>
+                <td>Ime Prezime</td>
+                <td class="points">90</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
