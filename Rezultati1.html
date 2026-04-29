@@ -19,7 +19,6 @@
         padding: 18px;
     }
 
-    /* HEADER */
     .header {
         text-align: center;
         margin-bottom: 25px;
@@ -42,7 +41,6 @@
         color: #94a3b8;
     }
 
-    /* SECTION TITLE */
     .section-title {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -51,7 +49,6 @@
         font-weight: 600;
     }
 
-    /* TABLE CARD */
     .card {
         background: rgba(255,255,255,0.03);
         border: 1px solid rgba(56,189,248,0.2);
@@ -97,7 +94,12 @@
         color: #fbbf24;
     }
 
-    /* MOBILE FIX */
+    .place {
+        text-align: right;
+        font-weight: bold;
+        color: #34d399;
+    }
+
     @media (max-width: 600px) {
         th, td {
             padding: 10px;
@@ -125,22 +127,13 @@
                 <th>#</th>
                 <th>Učenik</th>
                 <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
             </tr>
-            <tr>
-                <td class="rank">1</td>
-                <td>Ime Prezime</td>
-                <td class="points">95</td>
-            </tr>
-            <tr>
-                <td class="rank">2</td>
-                <td>Ime Prezime</td>
-                <td class="points">88</td>
-            </tr>
-            <tr>
-                <td class="rank">3</td>
-                <td>Ime Prezime</td>
-                <td class="points">81</td>
-            </tr>
+            <tr><td class="rank">1</td><td>Ime Prezime</td><td class="points">95</td><td class="place">1</td></tr>
+            <tr><td class="rank">2</td><td>Ime Prezime</td><td class="points">88</td><td class="place">2</td></tr>
+            <tr><td class="rank">3</td><td>Ime Prezime</td><td class="points">81</td><td class="place">3</td></tr>
+            <tr><td class="rank">4</td><td>Laza Lazic</td><td class="points">81</td><td class="place">4</td></tr>
+            <tr><td class="rank">5</td><td>Ilija Ilijic</td><td class="points">22</td><td class="place">5</td></tr>
         </table>
     </div>
 
@@ -152,17 +145,10 @@
                 <th>#</th>
                 <th>Učenik</th>
                 <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
             </tr>
-            <tr>
-                <td class="rank">1</td>
-                <td>Ime Prezime</td>
-                <td class="points">92</td>
-            </tr>
-            <tr>
-                <td class="rank">2</td>
-                <td>Ime Prezime</td>
-                <td class="points">86</td>
-            </tr>
+            <tr><td class="rank">1</td><td>Ime Prezime</td><td class="points">92</td><td class="place">1</td></tr>
+            <tr><td class="rank">2</td><td>Ime Prezime</td><td class="points">86</td><td class="place">2</td></tr>
         </table>
     </div>
 
@@ -174,12 +160,9 @@
                 <th>#</th>
                 <th>Učenik</th>
                 <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
             </tr>
-            <tr>
-                <td class="rank">1</td>
-                <td>Ime Prezime</td>
-                <td class="points">97</td>
-            </tr>
+            <tr><td class="rank">1</td><td>Ime Prezime</td><td class="points">97</td><td class="place">1</td></tr>
         </table>
     </div>
 
@@ -191,11 +174,34 @@
                 <th>#</th>
                 <th>Učenik</th>
                 <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
             </tr>
+            <tr><td class="rank">1</td><td>Ime Prezime</td><td class="points">90</td><td class="place">1</td></tr>
+        </table>
+    </div>
+
+    <!-- SKOLE -->
+    <div class="section-title">Ranglista Skola</div>
+    <div class="card">
+        <table>
             <tr>
-                <td class="rank">1</td>
-                <td>Ime Prezime</td>
-                <td class="points">90</td>
+                <th>#</th>
+                <th>Skola</th>
+                <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- MENTORI -->
+    <div class="section-title">Ranglista Mentora</div>
+    <div class="card">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Mentor</th>
+                <th class="points">Bodovi</th>
+                <th class="place">Mesto</th>
             </tr>
         </table>
     </div>
